@@ -12,7 +12,7 @@ const List: FC<ListProps> = ({data}) => {
     return (
         <ListGroup style={{ margin: '20px'}}>
             {data.map((item, index) => <ListGroup.Item key={item.id}>
-                #{item.id} - <strong>{item.name}</strong> - <a target={'_blank'} href={item.html_url}>{item.html_url}</a>
+                #{item.id} - <strong>{item.name}</strong> - <a href={item.html_url}>{item.html_url}</a>
             </ListGroup.Item> )}
         </ListGroup>
     )
